@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "typesound"
+version = "0.1.0"
+description = ""
+authors = ["Andrew Nelson <andrewnelsonnyc@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pynput = "^1.7.6"
+keyboard = "^0.13.5"
+
+[tool.poetry.scripts]
+start = "typesound:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
