@@ -1,5 +1,7 @@
-from typesound.microphone import grab_mike
+# from typesound.microphone import record
+from typesound.keys import track_keys
 
 def run():
     # Basic entry point to run the library
-    grab_mike("trial.wav", 20)
+    # record("trial.wav", 20)
+    track_keys()

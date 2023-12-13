@@ -16,14 +16,12 @@ class AudioRecorder:
                    '-r', str(rate),
                    '-c', str(2),
                    '-f', audioFormat, output_file]
-        print(command)
         # Start the command using Popen
         self.process = subprocess.Popen(command)
         self.recording = True
 
     def stop_recording(self):
         if self.process is not None:
-            print(self.process)
             if self.process.poll() is None:
                 # os.killpg(self.process.pid, signal.SIGTERM)
                 self.process.terminate()  # Terminate the subprocess
