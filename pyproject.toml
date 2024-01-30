@@ -9,9 +9,11 @@ readme = "README.md"
 python = "^3.11"
 pynput = "^1.7.6"
 keyboard = "^0.13.5"
+scipy = "^1.11.4"
 
 [tool.poetry.scripts]
 start = "typesound:run"
+gui = "typesound.gui.basic_gui:runGui"
 
 [build-system]
 requires = ["poetry-core"]
